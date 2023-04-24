@@ -1,0 +1,71 @@
+.form{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+.form-drup{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+<form class="form">
+    <h2>Registration Form</h2>
+    <div class="form-group">
+        <label for="">First Name</label>
+        <input type="text" placeholder="First Name" >
+    </div>
+    <div class="form-group">
+        <label for="">Last Name</label>
+        <input type="text" placeholder="Last Name" >
+    </div>
+    <div class="btn">
+        <button class="btn btn-primary">submit</button>
+        <button class="btn btn-warning">reset</button>
+    </div>
+</form>
+
+.form{
+    width: 350px;
+    margin: auto;
+    background-color: aqua;
+    margin-top: 100px;
+}
+
+.form-group{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}  */

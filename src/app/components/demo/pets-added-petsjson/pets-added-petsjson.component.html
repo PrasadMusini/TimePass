@@ -1,0 +1,17 @@
+<div class="container-fluid">
+
+    <div class="container" style="margin: 150px 0 0 20em;">
+        <form class="form" #formtag="ngForm"(ngSubmit)="signup(formtag.value)">
+            <input type="text" class="form-control" placeholder="Enter name" name="name" ngModel 
+             required>
+            <br>
+            <input type="text" class="form-control" placeholder="Enter gender" name="gender" ngModel 
+             required>
+             <input type="text" class="form-control" placeholder="Enter age" name="age" ngModel 
+             required>
+            
+            <br><br>
+            <button>signup</button>
+        </form>
+    </div>
+</div>

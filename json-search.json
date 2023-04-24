@@ -1,0 +1,71 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "email": "typicode",
+      "password": "dwd"
+    },
+    {
+      "name": "aa",
+      "price": "bb",
+      "color": "cc",
+      "id": 2
+    },
+    {
+      "name": "11",
+      "price": "22",
+      "color": "33",
+      "id": 3
+    },
+    {
+      "name": "qq",
+      "price": "ww",
+      "color": "ee",
+      "id": 4
+    },
+    {
+      "name": "cc",
+      "id": 5
+    },
+    {
+      "name": "god",
+      "email": "god@mail.com",
+      "password": "god@123",
+      "id": 6
+    }
+  ],
+  "demo2": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "pets": [
+    {
+      "name": "god",
+      "id": 1
+    },
+    {
+      "name": "33",
+      "id": 2
+    },
+    {
+      "name": "ee",
+      "id": 3
+    },
+    {
+      "name": "sam sindhu",
+      "email": "jessy@gmail.com",
+      "password": "rtgtr",
+      "id": 4
+    },
+    {
+      "petName": "raju",
+      "PetGender": "male",
+      "PetAge": "13",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<div class="main">
+    <div class="container">
+      <h2>Update Products</h2>
+      <form #loginform="ngForm" (ngSubmit)="updateProduct(loginform.value)">
+        <p>{{msg}}</p>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Enter name" name="name" ngModel="{{storeProduct?.name}}"
+            #email="ngModel" required>
+        </div>
+  
+        <div class="form-group">
+  
+          <input type="password" class="form-control" placeholder="Enter email" name="price"
+            ngModel="{{storeProduct?.price}}" required #password="ngModel" maxlength="20" minlength="3">
+  
+        </div>
+  
+        <div class="form-group">
+  
+          <input type="email" class="form-control" placeholder="Enter password" name="color"
+            ngModel="{{storeProduct?.color}}" #email="ngModel" required>
+        </div>
+  
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-info">Submit</button>
+          <a routerLink="/list">Go to list</a>
+        </div>
+      </form>
+    </div>
+  </div>

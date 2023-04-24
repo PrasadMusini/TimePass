@@ -1,0 +1,47 @@
+<!-- <div class="container">
+<div class="list">
+    <h1>Product List</h1>
+</div>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Color</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>namee</td>
+            <td>pricee</td>
+            <td>colorr</td>
+        </tr>
+    </tbody>
+</table>
+</div> -->
+
+<div class="product-list">
+    <h1>Product List</h1>
+    <!-- <p class="message-p">{{ productMessage }}</p> -->
+    <table>
+      <thead>
+        <tr>
+          
+          <th>Name</th>
+          <th>Price</th>
+          <th colspan="3" >Color</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of productData">
+          <!-- <td><img src="{{ item.image }}" /></td> -->
+          <td>{{item.name}}</td>
+          <td>{{item.price}}</td>
+          <td>{{item.color}}</td>
+          <td ><button (click)="deleteProduct(item.id)">Delete</button></td>
+          <td ><button routerLink="/update/{{item.id}}">update</button></td>
+        </tr>
+        <a href="/add">Add product</a>
+      </tbody>
+    </table>
+  </div>
+  

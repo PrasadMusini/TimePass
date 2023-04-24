@@ -1,0 +1,49 @@
+/* .container{
+   margin-left: 100px;
+   
+   background: #ae4949;
+   height: 100%;
+   
+}
+
+.list h1{
+    margin-left: 12em;
+}
+table{
+    text-align: left;
+} */
+
+table {
+    text-align: left;
+    color: blueviolet;
+    border-collapse: collapse;
+    margin-left: 21em;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+table td,
+table th {
+    border: 1px solid blueviolet;
+    padding: 10px;
+    min-width: 160px;
+}
+
+.adjust-update-link {
+    margin-left: 10px;
+}
+
+.product-list {
+    margin-left: 90px;
+
+}
+
+.product-list h1 {
+    /* font-size: 50px; */
+    /* justify-content: center; */
+    margin-left: 11.5em;
+    /* text-overflow: calc(30px 10% 100px); */
+}

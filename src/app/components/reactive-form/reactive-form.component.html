@@ -1,0 +1,66 @@
+<div class="forms">
+    <h2>Reactive Forms</h2>
+    <form [formGroup]="regForm" (ngSubmit)="submit()" class="form">
+      <div class="form-drup">
+        <label for="">First name</label>
+        <input type="text" formControlName="firstName">
+        <div class="text-danger"
+          *ngIf="this.regForm.get('firstName')?.touched && this.regForm.get('firstName')?.invalid || (submitted&&this.regForm.get('firstName')?.invalid)">
+          <div class="touched" *ngIf=" this.regForm.get('firstName')?.errors">
+            <p class="danger">Mandatory field</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-drup">
+        <label for="">Last name</label>
+        <input type="text" formControlName="lastName">
+        <div class="text-danger"
+          *ngIf="regForm.get('lastName')?.touched&&this.regForm.get('lastName')?.invalid || (submitted&&this.regForm.get('lastName')?.invalid)">
+          <p class="danger">Mandatory field</p>
+        </div>
+      </div>
+  
+      <div class="form-drup">
+        <label for="">Email</label>
+        <input type="text" formControlName="email">
+        <div class="text-danger" *ngIf="this.regForm.get('email')?.touched && this.regForm.get('email')?.pristine ">
+          Mandatory filed
+        </div>
+        <div class="text-danger" *ngIf="submitted&&this.regForm.get('email')?.invalid">
+            <p class="danger">invalid email</p>
+        </div>
+      </div>
+  
+      <div class="form-drup">
+        <label for="">Password</label>
+        <input type="text" formControlName="password">
+        <div class="text-danger"
+          *ngIf="this.regForm.get('password')?.touched && this.regForm.get('password')?.invalid || (submitted&&this.regForm.get('password')?.invalid) ">
+          <p class="danger"> Password must contains one capital, small, number and @</p> 
+        </div>
+      </div>
+  
+      <div class="form-drup">
+        <label for="">Confirm Password</label>
+        <input type="text" formControlName="conPassword">
+        <div class="text-danger"
+          *ngIf="this.regForm.get('conPassword')?.touched && this.regForm.get('conPassword')?.invalid || (submitted&&this.regForm.get('conPassword')?.invalid) ">
+          <p class="danger">Confirm Password must be same as Password</p>
+        </div>
+        <div class="text-danger"
+          *ngIf="submitted&&regForm.errors?.['mismatch'] && this.regForm.get('conPassword')?.touched">
+          <p class="danger">Invalid</p>
+        </div>
+      </div>
+  
+      <div class="btns">
+        <div class="btn">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+        <div class="btn">
+          <button class="btn btn-warning" type="reset" (click)="reset()">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>

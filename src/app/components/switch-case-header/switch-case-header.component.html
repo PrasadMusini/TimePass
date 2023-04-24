@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="title">
+        <a href="#">Title</a>
+    </div>
+    <div class="switch" [ngSwitch]="result">
+        <div class="navDiv" *ngSwitchCase="'login'">
+            <nav class="nav-bar">
+
+                <a href="#" (click)="home()">go to home</a>
+                <a href="#">login</a>
+                <a href="#">login</a>
+                <a href="#" (click)="signup()"> go tosignup</a>
+                <a href="#">login</a>
+            </nav>
+        </div>
+
+        <div class="navDiv" *ngSwitchCase="'signup'">
+            <nav class="nav-bar">
+
+                <a href="#" (click)="home()">go to home</a>
+                <a href="#">signup</a>
+                <a href="#" (click)="login()">go to login</a>
+                <a href="#">signup</a>
+                <a href="#">signup</a>
+            </nav>
+        </div>
+
+        <div class="navDiv" *ngSwitchCase="'home'">
+            <nav class="nav-bar">
+                <a href="#">home</a>
+                <a href="#">home</a>
+                <a href="#" (click)="login()">go to login</a>
+                <a href="#" (click)="signup()"> go to signup</a>
+                <a href="#">home</a>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <p *ngIf="result === 'login'">Login Page..</p>
+    <p *ngIf="result === 'signup'">Signup Page..</p>
+    <p *ngIf="result === 'home'">Home Page..</p>
+</div>
